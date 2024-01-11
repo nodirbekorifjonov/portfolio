@@ -1,0 +1,25 @@
+.site-logo::before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 4px solid #ec1839;
+  border-left: 4px solid #ec1839;
+}
+
+.site-logo::after {
+  content: "";
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-right: 4px solid #ec1839;
+  border-bottom: 4px solid #ec1839;
+}
+
+.navbar__link.active {
+  color: #ec1839;
+}

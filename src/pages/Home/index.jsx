@@ -11,17 +11,19 @@ const Home = () => {
   return (
     <div className="">
       {/* Home */}
-      <section className="home">Home</section>
+      <section id="home" className="home">
+        Home
+      </section>
       {/* About */}
-      <About />
+      {/* <About /> */}
       {/* Service */}
-      <Service />
+      {/* <Service /> */}
       {/* Application */}
-      <Application />
+      {/* <Application /> */}
       {/* Blog */}
-      <Blog />
+      {/* <Blog /> */}
       {/* Contact */}
-      <Contact />
+      {/* <Contact /> */}
     </div>
   );
 };
