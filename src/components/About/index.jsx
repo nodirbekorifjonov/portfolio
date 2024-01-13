@@ -25,7 +25,7 @@ const About = () => {
       className="section fadeIn px-[3rem] w-full min-h-screen text-[#302e4d]"
     >
       <div className="main-container pt-[6rem] pb-[7rem]">
-        <div className="about__title relative mb-[6rem]">
+        <div className="about__title components__title relative mb-[6rem]">
           <h2 className="text-[4rem] font-bold font-rubik">About Me</h2>
         </div>
         <div className="font-montserrat">
@@ -45,10 +45,10 @@ const About = () => {
             dynamic field of frontend development
           </p>
         </div>
-        <div className="pt-[4rem] flex justify-between mb-[7rem] gap-[3rem]">
-          <div className="about__informations font-montserrat flex flex-col">
-            <div className="flex gap-[3rem] mb-[3rem]">
-              <ul className="about__informations-list w-[28rem] text-[1.6rem] text-[#504e70]">
+        <div className="pt-[4rem] flex justify-between mb-[7rem] gap-[3rem] max-[1000px]:flex-wrap max-[1000px]:justify-center">
+          <div className="about__informations font-montserrat flex flex-col max-[1000px]:w-full">
+            <div className="flex gap-x-[3rem] mb-[3rem] max-[1000px]:w-full max-[500px]:flex-wrap">
+              <ul className="about__informations-list w-[28rem] text-[1.6rem] text-[#504e70] max-[1000px]:w-[50%] max-[500px]:w-full">
                 <li className="about__informations-item py-[1rem] w-full border-b-[1px] border-[#e8dfec]">
                   <span className="font-semibold text-[#302e4d]">City : </span>
                   {infoData.city}
@@ -72,7 +72,7 @@ const About = () => {
                   </Link>
                 </li>
               </ul>
-              <ul className="about__informations-list w-[28rem] text-[1.6rem] text-[#504e70]">
+              <ul className="about__informations-list w-[28rem] text-[1.6rem] text-[#504e70] max-[1000px]:w-[50%] max-[500px]:w-full">
                 <li className="about__informations-item py-[1rem] w-full border-b-[1px] border-[#e8dfec]">
                   <Link to={`tel:${infoData.phone1}`}>
                     <span className="font-semibold text-[#302e4d]">
@@ -108,12 +108,12 @@ const About = () => {
             <a
               href={resume}
               download="resume.pdf"
-              className="self-start flex justify-center items-center bg-[#ec1839] rounded-[4rem] py-[1.2rem] px-[3.5rem] font-rubik font-medium text-[1.6rem] transition-all duration-300 text-white hover:scale-105"
+              className="self-start flex justify-center items-center bg-[#ec1839] rounded-[4rem] py-[1.2rem] px-[3.5rem] font-rubik font-medium text-[1.6rem] transition-all duration-300 text-white hover:scale-105 max-[1000px]:self-center"
             >
               Download CV
             </a>
           </div>
-          <div className="about__skills w-[42rem]">
+          <div className="about__skills w-[42rem] max-[1000px]:w-full">
             <ul className="about__skills-list flex flex-col gap-[3rem]">
               {skillsData.map((skill, index) => (
                 <li key={index} className="about__skills-item">
@@ -134,8 +134,8 @@ const About = () => {
             </ul>
           </div>
         </div>
-        <div className="flex gap-[3rem]">
-          <div className="about__education w-[50%]">
+        <div className="flex gap-[3rem] max-[745px]:flex-wrap">
+          <div className="about__education w-[50%] max-[745px]:w-full">
             <h4 className="text-[2.4rem] font-montserrat font-bold mb-[3rem]">
               Education
             </h4>
@@ -162,7 +162,7 @@ const About = () => {
               ))}
             </ul>
           </div>
-          <div className="about__education w-[50%]">
+          <div className="about__education w-[50%] max-[745px]:w-full">
             <h4 className="text-[2.4rem] font-montserrat font-bold mb-[3rem]">
               Experience
             </h4>

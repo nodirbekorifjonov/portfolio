@@ -1,0 +1,8 @@
+.services__item:hover span {
+  background: #ec1839;
+}
+
+.services__item:hover span {
+  font-size: 3.5rem;
+  color: #fff;
+}

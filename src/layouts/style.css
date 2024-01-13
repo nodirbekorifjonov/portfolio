@@ -50,7 +50,7 @@
   }
 }
 
-.about__title::before {
+.components__title::before {
   content: "";
   display: block;
   height: 4px;
@@ -61,7 +61,7 @@
   background: #ec1839;
 }
 
-.about__title::after {
+.components__title::after {
   content: "";
   height: 4px;
   width: 25px;
