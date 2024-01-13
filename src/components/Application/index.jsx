@@ -1,7 +1,7 @@
 import React from "react";
 
 const Application = () => {
-  return <div>Application</div>;
+  return <div className="fadeIn fixed">Application</div>;
 };
 
 export default Application;

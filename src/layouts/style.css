@@ -23,3 +23,51 @@
 .navbar__link.active {
   color: #ec1839;
 }
+
+.fadeIn {
+  visibility: visible;
+  animation: fadeInAnimation 1s ease;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    visibility: hidden;
+    transform: translateX(100%);
+  }
+  100% {
+    visibility: visible;
+    transform: translateX(0%);
+  }
+}
+
+.burger {
+  visibility: hidden;
+}
+
+@media screen and (max-width: 1200px) {
+  .burger {
+    visibility: visible;
+  }
+}
+
+.about__title::before {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 50px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #ec1839;
+}
+
+.about__title::after {
+  content: "";
+  height: 4px;
+  width: 25px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 8px;
+  background: #ec1839;
+}

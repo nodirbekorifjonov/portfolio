@@ -1,0 +1,38 @@
+[
+  {
+    "skillName": "HTML",
+    "progress": "86%"
+  },
+  {
+    "skillName": "CSS",
+    "progress": "90%"
+  },
+  {
+    "skillName": "Sass",
+    "progress": "88%"
+  },
+  {
+    "skillName": "Bootstrap",
+    "progress": "80%"
+  },
+  {
+    "skillName": "Tailwind Css",
+    "progress": "92%"
+  },
+  {
+    "skillName": "JavaScript",
+    "progress": "83%"
+  },
+  {
+    "skillName": "Webpack",
+    "progress": "89%"
+  },
+  {
+    "skillName": "React Js",
+    "progress": "70%"
+  },
+  {
+    "skillName": "Material UI",
+    "progress": "75%"
+  }
+]

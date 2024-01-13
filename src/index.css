@@ -41,7 +41,3 @@ body {
   width: 100%;
   margin: auto;
 }
-
-.section.active {
-  opacity: 1;
-}

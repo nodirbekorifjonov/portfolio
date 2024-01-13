@@ -1,0 +1,21 @@
+/* .about__education::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 85%;
+  background: #ec1839;
+  top: 3.5rem;
+  left: 2.2rem;
+  bottom: 3.5rem;
+} */
+
+/* .about__education-item::before {
+  content: "";
+  width: 1.5rem;
+  height: 1.5rem;
+  position: absolute;
+  border-radius: 100%;
+  background: #ec1839;
+  top: 3.5rem;
+  left: 1.5rem;
+} */
