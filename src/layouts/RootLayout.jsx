@@ -35,6 +35,8 @@ const RootLayout = () => {
   // aside open
   const [openAside, setOpenAside] = useState(false);
 
+  //
+
   return (
     <div className="flex h-full">
       {/* Aside */}
