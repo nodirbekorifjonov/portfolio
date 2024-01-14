@@ -1,0 +1,11 @@
+.applications__preview:hover .applications__preview-hover {
+  opacity: 1;
+}
+
+.applications__preview:hover .applications__preview-hover p {
+  transform: translateX(0px);
+}
+
+.applications__preview:hover .applications__preview-hover span {
+  transform: translateX(0px);
+}
