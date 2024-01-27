@@ -1,3 +1,7 @@
+.aside.active {
+  transform: translateX(0);
+}
+
 .site-logo::before {
   content: "";
   height: 20px;

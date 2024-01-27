@@ -2,56 +2,56 @@
   {
     "appTitle": "Virtual Vard",
     "appUrl": "https://vcarduz.netlify.app/",
-    "appImage": "images/vcarduz.png"
+    "appImage": "vcarduz.png"
   },
   {
     "appTitle": "UzLaptop online store",
     "appUrl": "https://uzlaptop.netlify.app/",
-    "appImage": "images/uzlaptop.webp"
+    "appImage": "uzlaptop.webp"
   },
   {
     "appTitle": "Random User",
     "appUrl": "https://nf-randomuser.netlify.app/",
-    "appImage": "images/randomuser.png"
+    "appImage": "randomuser.png"
   },
   {
     "appTitle": "Web Dictionary",
     "appUrl": "https://nm-dictionary.netlify.app/",
-    "appImage": "images/webdictionary.png"
+    "appImage": "webdictionary.png"
   },
   {
     "appTitle": "Countries",
     "appUrl": "https://n-countries-tailwind.netlify.app/",
-    "appImage": "images/countries.png"
+    "appImage": "countries.png"
   },
   {
     "appTitle": "GitHub Clone",
     "appUrl": "https://nfs-github.netlify.app/",
-    "appImage": "images/githubclone.png"
+    "appImage": "githubclone.png"
   },
   {
     "appTitle": "ToDo List",
     "appUrl": "https://nm-todolistnew.netlify.app/",
-    "appImage": "images/todolist.png"
+    "appImage": "todolist.png"
   },
   {
     "appTitle": "DrumKit",
     "appUrl": "https://nfs-drums.netlify.app/",
-    "appImage": "images/drumkit.png"
+    "appImage": "drumkit.png"
   },
   {
     "appTitle": "Scoot",
     "appUrl": "https://nfs-scoot.netlify.app/",
-    "appImage": "images/scoot.png"
+    "appImage": "scoot.png"
   },
   {
     "appTitle": "EasyBank",
     "appUrl": "https://nfs-easybank.netlify.app/",
-    "appImage": "images/easybank.png"
+    "appImage": "easybank.png"
   },
   {
     "appTitle": "Pixer",
     "appUrl": "https://nm-pixer.netlify.app/",
-    "appImage": "images/pixer.png"
+    "appImage": "pixer.png"
   }
 ]

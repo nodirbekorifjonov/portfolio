@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 // react-router-dom
-import { Outlet, Link, useNavigate } from "react-router-dom";
+import { Outlet, Link, useLocation } from "react-router-dom";
 
 // styles
 import "./style.css";
@@ -21,29 +21,18 @@ import { IoClose } from "react-icons/io5";
 // components
 
 const RootLayout = () => {
-  !localStorage.getItem("active") && localStorage.setItem("active", "home");
-
-  const navigate = useNavigate();
-  const [activeLink, setActiveLink] = useState(localStorage.getItem("active"));
-
-  const handleLinkClick = (linkName) => {
-    setActiveLink(linkName);
-    navigate(linkName);
-    localStorage.setItem("active", linkName);
-  };
+  const location = useLocation();
 
   // aside open
   const [openAside, setOpenAside] = useState(false);
-
-  //
 
   return (
     <div className="flex h-full">
       {/* Aside */}
       <aside
-        className={`aside fixed top-0 left-0 bottom-0 z-[10] w-[270px] flex-shrink-0 border-r-[1px] border-[#e8dfec] p-[3rem] text-[#302e4d] bg-[#fdf9ff] h-full transition-all duration-500 max-[1200px]:translate-x-[${
-          openAside ? "0" : "-100%"
-        }]`}
+        className={`aside fixed top-0 left-0 bottom-0 z-[10] w-[270px] flex-shrink-0 border-r-[1px] border-[#e8dfec] p-[3rem] text-[#302e4d] bg-[#fdf9ff] h-full transition-all duration-500 max-[1200px]:translate-x-[-100%] ${
+          openAside ? "active" : ""
+        }`}
       >
         <div
           onClick={() =>
@@ -65,12 +54,9 @@ const RootLayout = () => {
               <li className="navbar__item">
                 <Link
                   to="/"
-                  onClick={() => {
-                    handleLinkClick("home");
-                    setOpenAside(false);
-                  }}
+                  onClick={() => setOpenAside(false)}
                   className={`navbar__link flex gap-[1rem] items-center leading-[4.5rem] border-b-[1px] border-[#e8dfec] transition-all hover:text-[#ec1839] hover:translate-x-1 ${
-                    activeLink === "home" ? "active" : ""
+                    location.pathname === "/" ? "active" : ""
                   }`}
                 >
                   <span className="text-[1.8rem]">
@@ -82,12 +68,9 @@ const RootLayout = () => {
               <li className="navbar__item">
                 <Link
                   to="about"
-                  onClick={() => {
-                    handleLinkClick("about");
-                    setOpenAside(false);
-                  }}
+                  onClick={() => setOpenAside(false)}
                   className={`navbar__link flex gap-[1rem] items-center leading-[4.5rem] border-b-[1px] border-[#e8dfec] transition-all hover:text-[#ec1839] hover:translate-x-1 ${
-                    activeLink === "about" ? "active" : ""
+                    location.pathname === "/about" ? "active" : ""
                   }`}
                 >
                   <span className="">
@@ -99,12 +82,9 @@ const RootLayout = () => {
               <li className="navbar__item">
                 <Link
                   to="service"
-                  onClick={() => {
-                    handleLinkClick("service");
-                    setOpenAside(false);
-                  }}
+                  onClick={() => setOpenAside(false)}
                   className={`navbar__link flex gap-[1rem] items-center leading-[4.5rem] border-b-[1px] border-[#e8dfec] transition-all hover:text-[#ec1839] hover:translate-x-1 ${
-                    activeLink === "service" ? "active" : ""
+                    location.pathname === "/service" ? "active" : ""
                   }`}
                 >
                   <span className="">
@@ -116,12 +96,9 @@ const RootLayout = () => {
               <li className="navbar__item">
                 <Link
                   to="applications"
-                  onClick={() => {
-                    handleLinkClick("applications");
-                    setOpenAside(false);
-                  }}
+                  onClick={() => setOpenAside(false)}
                   className={`navbar__link flex gap-[1rem] items-center leading-[4.5rem] border-b-[1px] border-[#e8dfec] transition-all hover:text-[#ec1839] hover:translate-x-1 ${
-                    activeLink === "applications" ? "active" : ""
+                    location.pathname === "/applications" ? "active" : ""
                   }`}
                 >
                   <span className="">
@@ -133,12 +110,9 @@ const RootLayout = () => {
               <li className="navbar__item">
                 <Link
                   to="blog"
-                  onClick={() => {
-                    handleLinkClick("blog");
-                    setOpenAside(false);
-                  }}
+                  onClick={() => setOpenAside(false)}
                   className={`navbar__link flex gap-[1rem] items-center leading-[4.5rem] border-b-[1px] border-[#e8dfec] transition-all hover:text-[#ec1839] hover:translate-x-1 ${
-                    activeLink === "blog" ? "active" : ""
+                    location.pathname === "/blog" ? "active" : ""
                   }`}
                 >
                   <span className="">
@@ -150,12 +124,9 @@ const RootLayout = () => {
               <li className="navbar__item">
                 <Link
                   to="contact"
-                  onClick={() => {
-                    handleLinkClick("contact");
-                    setOpenAside(false);
-                  }}
+                  onClick={() => setOpenAside(false)}
                   className={`navbar__link flex gap-[1rem] items-center leading-[4.5rem] border-b-[1px] border-[#e8dfec] transition-all hover:text-[#ec1839] hover:translate-x-1 ${
-                    activeLink === "contact" ? "active" : ""
+                    location.pathname === "/contact" ? "active" : ""
                   }`}
                 >
                   <span className="text-[1.9rem]">

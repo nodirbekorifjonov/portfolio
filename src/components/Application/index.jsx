@@ -26,7 +26,11 @@ const Application = () => {
               <li key={index} className="applications__item">
                 <Link to={app.appUrl} target="_blank">
                   <div className="applications__preview relative border-[0.6rem] border-[#fdf9ff] w-[33.4rem] h-[20rem] rounded-[1rem] overflow-hidden mb-[1rem] transition-all duration-300">
-                    <img src={app.appImage} alt="" className="w-full" />
+                    <img
+                      src={`images/${app.appImage}`}
+                      alt=""
+                      className="w-full"
+                    />
                     <div
                       target="_blank"
                       className="applications__preview-hover absolute w-full h-full bg-[rgba(0,0,0,0.8)] z-[1] top-0 left-0 bottom-0 pt-[3rem] pb-[2rem] pl-[3rem] pr-[1.5rem] flex justify-between opacity-0 transition-all duration-300"
