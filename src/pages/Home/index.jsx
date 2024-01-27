@@ -3,9 +3,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 // import styled, { keyframes } from "styled-components";
 
-// images
-import myImg from "../../assets/images/myimg.jpg";
-
 // react-icons
 import { FaTelegramPlane } from "react-icons/fa";
 import {
@@ -26,7 +23,7 @@ const Home = () => {
         <div className="main-container pt-[6rem] pb-[7rem] flex flex-col items-center text-center">
           {/* My Image */}
           <img
-            src={myImg}
+            src="/images/myimg.jpg"
             alt=""
             width={200}
             className="rounded-full border-[8px] border-[#ffffff] shadow-[0_0_20px_rgb(48,46,77,0.15)] mb-[2rem]"
